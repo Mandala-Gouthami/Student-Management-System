@@ -1,0 +1,74 @@
+{
+  "persons": [
+    {
+      "id": 1,
+      "name": "Gouthami",
+      "age": 26,
+      "email": "gouthami@gmail.com",
+      "phone": 8121749701
+    },
+    {
+      "id": 2,
+      "name": "Prashanth",
+      "age": 27,
+      "email": "prashanth@gmail.com",
+      "phone": 9291367646
+    },
+    {
+      "id": 3,
+      "name": "Pallavi",
+      "age": 29,
+      "email": "pallavi@gmail.com",
+      "phone": 9100428190
+    },
+    {
+      "id": 4,
+      "name": "Vaishali",
+      "age": 23,
+      "email": "vaishali@gmail.com",
+      "phone": 9866384301
+    },
+    {
+      "id": 5,
+      "name": "Suchitha",
+      "age": 28,
+      "email": "suchi@gmail.com",
+      "phone": 9283741042
+    },
+    {
+      "id": 6,
+      "name": "Mounika",
+      "age": 26,
+      "email": "mouni@gmail.com",
+      "phone": 9237281042
+    },
+    {
+      "id": 7,
+      "name": "Anusha",
+      "age": 25,
+      "email": "anusha@gmail.com",
+      "phone": 9227280642
+    },
+    {
+      "id": 8,
+      "name": "Pavani",
+      "age": 25,
+      "email": "pavani@gmail.com",
+      "phone": 8227292642
+    },
+    {
+      "id": 9,
+      "name": "Sravanthi",
+      "age": 26,
+      "email": "sravanthi@gmail.com",
+      "phone": 7227123652
+    },
+    {
+      "id": 10,
+      "name": "Guru Prasad",
+      "age": 27,
+      "email": "guru@gmail.com",
+      "phone": 9192993480
+    }
+  ]
+}

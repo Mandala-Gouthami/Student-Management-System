@@ -1,0 +1,12 @@
+
+<div class="container-fluid mt-5">
+    <button class="btn btn-dark add-person-btn" (click)="addNewPerson()">Add New Person</button>
+    <ag-grid-angular
+    class="ag-theme-alpine"
+    style="width: 1020px;height: 386px;" 
+    [rowData]="rowData"
+    [columnDefs]="colDefs"
+    (rowClicked)="onRowClicked($event)">
+    </ag-grid-angular>
+</div>
+

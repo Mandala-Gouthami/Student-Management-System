@@ -1,0 +1,60 @@
+<!-- <form [formGroup]="detailsForm">
+    <mat-grid-list cols="1" rowHeight="auto">
+    <mat-form-field appearance="fill">
+      <mat-label>ID</mat-label>
+      <input matInput formControlName="id">
+    </mat-form-field>
+  
+    <mat-form-field appearance="fill">
+      <mat-label>Name</mat-label>
+      <input matInput formControlName="name">
+    </mat-form-field>
+  
+    <mat-form-field >
+      <mat-label>Age</mat-label>
+      <input matInput formControlName="age" >
+    </mat-form-field>
+  
+    <mat-form-field appearance="fill">
+      <mat-label>Email</mat-label>
+      <input matInput formControlName="email" >
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+        <mat-label>Phone</mat-label>
+        <input matInput formControlName="phone" >
+      </mat-form-field>
+
+    </mat-grid-list>
+   
+  </form> -->
+<div class="container">
+    <div class="button">
+        <button mat-icon-button (click)="closeDialog()" class="close-button">
+            <mat-icon aria-label="Close dialog">close</mat-icon>
+          </button>
+    </div>
+  <form [formGroup]="detailsForm">
+    <div class="form-group">
+        <label for="name">ID:</label>
+        <input type="text" class="form-control" id="id" formControlName="id">
+    </div>
+    <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" class="form-control" id="name" formControlName="name">
+    </div>
+    <div class="form-group">
+        <label for="age">Age:</label>
+        <input type="number" class="form-control" id="age" formControlName="age">
+    </div>
+    <div class="form-group">
+        <label for="phone">Phone:</label>
+        <input type="text" class="form-control" id="phone" formControlName="phone">
+    </div>
+    <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="text" class="form-control" id="email" formControlName="email">
+    </div>
+</form>
+
+</div>
