@@ -6,7 +6,8 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class PersonService {
-private baseUrl='http://localhost:3000/persons';
+// private baseUrl='http://localhost:3000/persons';
+private baseUrl='http://localhost:8080/api/students/';
   constructor(private http: HttpClient) { }
 
   addPerson(personData: any){

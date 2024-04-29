@@ -1,6 +1,8 @@
+import { SignupService } from './../services/signup.service';
 import { Component } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
+import { User } from '../classes/user';
 
 @Component({
   selector: 'app-signup',
@@ -9,20 +11,21 @@ import { Router } from '@angular/router';
 })
 export class SignupComponent {
 
-  formData={
-    firstName:'',
-    lastName:'',
-    email:'',
-    phone:'',
-    password:'',
-    age:null,
-    company: ''
+  formData:User=new User();
+
+  constructor(private router: Router, private signUpService: SignupService){}
+
+  saveUser(){
+    this.signUpService.addUser(this.formData).subscribe(data=>{
+      console.log(data);
+      this.router.navigate(['/login']);
+    },
+    error=>console.log(error)
+    );
   }
-
-  constructor(private router: Router){}
-
   onSubmit(){
     console.log(this.formData);
-    this.router.navigate(['/dashboard']);
+    this.saveUser();
   }
+
 }
