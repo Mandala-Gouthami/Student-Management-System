@@ -12,4 +12,9 @@ private baseUrl='http://localhost:8080/api/user/';
   addUser(userData : any){
     return this.http.post<User>(this.baseUrl, userData);
   }
+
+  loginUser(user: User){
+    const login='login';
+    return this.http.post<User>(`${this.baseUrl}${login}`, user);
+  }
 }
